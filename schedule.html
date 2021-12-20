@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="schedule.css">
+  <script type="text/javascript" src="script.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Inter:wght@300;500&display=swap"
+    rel="stylesheet">
+  <title>Schedule</title>
+  <link rel="icon" type="image/x-icon" href="https://img.icons8.com/color/48/000000/tom.png">
+</head>
+
+<body onload="onloadSchedule()">
+  <div class="container">
+
+    <header class="header bg-blue">
+      <img src="https://img.icons8.com/color/48/000000/tom.png" alt="Logo" />
+        <nav class="header-bar">
+          <a class="head-foot-link my" href="homepage.html">Homepage</a>
+          <a class="head-foot-link my" href="hobbies.html">Hobbies</a>
+          <a class="head-foot-link" href="about.html">About</a>
+          <a class="head-foot-link my bold" href="schedule.html">Schedule</a>
+          <a class="head-foot-link my" href="family.html">Family</a>
+        </nav>
+    </header>
+
+    <main class="content">
+      <div class="cover" onclick="onClickCover(this)">
+        <div class="background-img"></div>
+        <div class="title-schedule">
+          <h1>My weekly schedule</h1>
+          <p>Click on me 👆 to see my schedule</p>
+          <div class="content-title">
+            Dispide being not so young I am managing healthy day routing and 
+            encouraging my family to do the same.
+            Thanks to me they exercise constantly even at nigth and you'll 
+            be able to see this from my weekly schedule bellow.
+          </div>
+        </div>
+      </div>
+
+        <table id="schedule-table" class="table-body">
+          <tr>
+            <th></th>
+            <th>Morning</th>
+            <th>Day</th>
+            <th>Evening</th>
+            <th>Night</th>
+          </tr>
+          <tr>
+            <th>Sunday</th>
+            <td>
+              <div class="icon-float">
+                <img src="img/food-48.png" alt="Eating" />
+              </div>
+              <div>Playing with some of my realy boring toys</div>
+            </td>
+            <td>
+              <div>Trying to swim in the bathroom and play with the shower</div>
+            </td>
+            <td>
+              <div class="icon-float">
+                <img src="img/food-48.png" alt="Eating" />
+              </div>
+              <div>Sleeping on warm human clothes</div>
+            </td>
+            <td>
+              <div>Running for short distance - between rooms in my appartment</div>
+            </td>
+          </tr>
+          <tr>
+            <th>Monday</th>
+            <td>
+              <div>Sleeping inside the family beds when they don't see</div>  
+            </td>
+            <td>
+              <div class="icon-float">
+                <img src="img/food-48.png" alt="Eating" />
+              </div>
+              <div>Hunting after burds</div>
+            </td>
+            <td>Hiding inside the closets so my family looks after me</td>
+            <td>
+              <div class="icon-float">
+                <img src="img/canned-food-48.png" alt="Eating" />
+              </div>
+              <div>Jumping in height - on the walls, sometimes I see flies on them</div>
+            </td>
+          </tr>
+          <tr>
+            <th>Tuesday</th>
+            <td>
+              <div class="icon-float">
+                <img src="img/canned-food-48.png" alt="Eating" />
+              </div>
+              <div>Washing and leaking my perfect fur</div>
+            </td>
+            <td>Sleeping on the sun</td>
+            <td>
+              <div class="icon-float">
+                <img src="img/food-48.png" alt="Eating" />
+              </div>
+              <div>Letting my family to brush and groom me</div>
+            </td>
+            <td>
+              <div>Organizing and training my family members by jumping on them during their sleep</div>
+            </td>
+          </tr>
+          <tr>
+            <th>Wednesday</th>
+            <td>
+              <div class="icon-float">
+                <img src="img/food-48.png" alt="Eating" />
+              </div>
+              <div>Watching after people and trafic from the window.</div>
+            </td>
+            <td>Sleeping inside accidentaly open wardrobe</td>
+            <td>
+              <div>Singing in different voices to impress my family</div>
+            </td>
+            <td>
+              
+              <div class="icon-float">
+                <img src="img/food-48.png" alt="Eating" />
+              </div>
+              <div>Running for long distance - around my appartment</div>
+            </td>
+          </tr>
+          <tr>
+            <th>Thursday</th>
+            <td>
+              <div>Sleeping in my secret place such that family won't disturb me as usual</div>
+            </td>
+            <td>
+              <div class="icon-float">
+                <img src="img/canned-food-48.png" alt="Eating" />
+              </div>
+              <div>Playing with my beautiful tail</div>
+            </td>
+            <td>
+              <div>Playing hide and seak with my family members</div>
+            </td>
+            <td>
+              <div>Jumping on curtance to see why they are moving</div>
+            </td>
+          </tr>
+          <tr>
+            <th>Friday</th>
+            <td>
+              <div class="icon-float">
+                <img src="img/food-48.png" alt="Eating" />
+              </div>
+              <div>Disturbing family in their activities</div>
+            </td>
+            <td>Sleeping inside the family beds when they don't see</td>
+            <td>
+              <div>Watching moies with my family and hunting movments on the screen</div>
+            </td>
+            <td>
+              <div class="icon-float">
+                <img src="img/food-48.png" alt="Eating" />
+              </div>
+              <div>Exploring flowres, plants and decorations on the shelves</div>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <div>Shabat</div>
+            </th>
+            <td>
+              <div>Singing in different voices to impress my family</div>
+            </td>
+            <td>       
+              <div class="icon-float">
+                <img src="img/food-48.png" alt="Eating" />
+              </div>
+              <div>Sleeping on flufy pillows</div>
+            </td>
+            <td>
+              <div>Letting my family to brush and groom me</div>
+            </td>
+            <td> 
+              <div class="icon-float">
+                <img src="img/canned-food-48.png" alt="Eating" />
+              </div>
+              <div>Hunting on wondering family members and scaring them</div>
+            </td>
+          </tr>
+        </table>
+
+    </main>
+
+    <footer class="footer bg-blue">
+        <nav class="footer-bar">
+          <a class="head-foot-link" href="contact.html">Contact me</a>
+          <div class="sign">
+          <img src="https://img.icons8.com/emoji/48/000000/paw-prints.png" alt="Sign"/>
+          <p>Israel, 2021-2022</p>
+          </div>
+        </nav>
+
+    </footer>
+
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+main {
+    overflow: auto;
+    background-image: url(img/pink-texture2.jpg);
+    background-repeat: round;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.border-homepage {
+    position: absolute;
+    height: 20vh;
+    width: 20vw;
+    top: 0;
+    border-top: 5px solid hotpink;
+    margin: 20px 30px;
+}
+
+.border-left-homepage {
+    left: 0;
+    border-left: 5px solid hotpink;
+}
+
+.border-right-homepage {
+    right: 0;
+    border-right: 5px solid hotpink;
+}
+
+.title-homepage {
+    text-align: center;
+    margin: 25px 40px 0;
+}
+
+.photos-homepage {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px;
+    flex-wrap: wrap;
+}
+
+.photo-1-homepage img {
+    max-width: 30vw;
+    min-width: 200px;
+    width: 100%;
+}
+
+.photo-2-homepage img {
+    max-width: 30.5vw;
+    min-width: 200px;
+    width: 100%;
+}
+
+.photo-1-homepage p, .photo-2-homepage p {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.div-date-homepage {
+    flex: 30%;
+    padding: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    color: deeppink;
+    text-align: center;
+}
+
+#date-homepage {
+    font-size: 24px;
+    color: black;
+    padding: 10px;
+}
+
+@media screen and (max-width: 500px) {
+    .photos-homepage {
+        justify-content: center;
+        margin-top: 0;
+    }
+    .div-date-homepage {
+        order: -1;
+    }
+    
+}
+

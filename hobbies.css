@@ -1,0 +1,59 @@
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.photo-slider {
+    width: 65vw;
+    height: 65vh;
+}
+
+.slider-hobbies.hidden-hobbies {
+    height: 0;
+    width: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.slider-hobbies {
+    opacity: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    transition: all 1s ease-in-out;
+    border: 5px double gray
+}
+
+#slider-text {
+    background-color: gray;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.button-hobbies {
+    cursor: pointer;
+    font-size: 40px;
+    padding: 20px;
+    color: gray;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    transition: font-size 0.25s ease-in-out;
+}
+
+.button-hobbies:hover {
+    color: #659dbd;
+    font-size: 60px;
+}
+
+@media screen and (max-width: 700px) {
+    .photo-slider {
+        width: 65vw;
+        height: 30vh;
+    }
+}

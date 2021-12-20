@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+    <script type="text/javascript" src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Inter:wght@300;500&display=swap"
+        rel="stylesheet">
+    <title>Contact me</title>
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/color/48/000000/tom.png">
+</head>
+
+<body onload="addH2()">
+    <div class="container">
+
+        <header class="header bg-blue">
+            <img src="https://img.icons8.com/color/48/000000/tom.png" alt="Logo" />
+            <nav class="header-bar">
+                <a class="head-foot-link my" href="homepage.html">Homepage</a>
+                <a class="head-foot-link my" href="hobbies.html">Hobbies</a>
+                <a class="head-foot-link" href="about.html">About</a>
+                <a class="head-foot-link my" href="schedule.html">Schedule</a>
+                <a class="head-foot-link my" href="family.html">Family</a>
+            </nav>
+        </header>
+
+        <main>
+            <div id="contact-form" class="contact-form">
+                <h2>Contact me form</h2>
+                <h3>If you have any questions or find mistakes don't hesitate to contact me using the following form
+                </h3>
+            </div>
+
+            <div class="main-container">
+                <img class="photo-long" src="img/long.jpg" />
+
+                <div class="container-form">
+
+                    <form class="grid-container" onsubmit="alert('Your form has been submited')">
+
+                        <div class="col-left">
+                            <label for="fname">First Name</label>
+                        </div>
+                        <div class="col-right">
+                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                        </div>
+
+
+                        <div class="col-left">
+                            <label for="lname">Last Name</label>
+                        </div>
+                        <div class="col-right">
+                            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        </div>
+
+
+                        <div class="col-left">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="col-right">
+                            <input type="text" id="email" name="email" placeholder="Your email..">
+                        </div>
+
+
+                        <div class="col-left">
+                            <label for="telephone">Telephone</label>
+                        </div>
+                        <div class="col-right">
+                            <input type="text" id="telephone" name="telephone" placeholder="Your telephone..">
+                        </div>
+
+
+                        <div class="col-left">
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="col-right">
+                            <textarea id="subject" name="subject" placeholder="Write something.."
+                                style="height:200px"></textarea>
+                        </div>
+
+
+                        <div class="button">
+                            <input type="submit" value="Submit" onclick="onSubmit()">
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+
+
+        </main>
+
+        <footer class="footer bg-blue">
+            <nav class="footer-bar">
+                <a class="head-foot-link bold" href="contact.html">Contact me</a>
+                <div class="sign">
+                    <img src="https://img.icons8.com/emoji/48/000000/paw-prints.png" alt="Sign" />
+                    <p>Israel, 2021-2022</p>
+                </div>
+            </nav>
+
+        </footer>
+
+    </div>
+</body>
+
+</html>

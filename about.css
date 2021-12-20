@@ -1,0 +1,78 @@
+
+.photos-about {
+    display: grid;
+    grid-template-columns: 1.1fr 1.5fr 1fr;
+}
+
+.photo-container-about {
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.photo-container-about img {
+    max-width: 100%;
+    cursor: pointer;
+}
+
+.click {
+    font-weight: bold;
+}
+
+.cloud-about {
+    position: absolute;
+    left: 0;
+    bottom: -50%;
+    visibility: hidden;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 20px;
+    margin: 10px;
+    background-color: seashell;
+    transition: bottom 1s ease-in-out;
+    box-shadow: 3px 3px 3px rgb(60 0 0);
+    opacity: 0.8;
+}
+
+.top-middle-sell-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.video-about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.video-about p {
+    flex: 0.5;
+    font-size: 20px;
+    padding: 20px;
+    margin: 0;
+}
+
+@media screen and (max-width: 700px) {
+    .photos-about {
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
+    
+    .top-middle-sell-about {
+        grid-row: 1;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .video-about {
+        flex-direction: column;
+    }
+}

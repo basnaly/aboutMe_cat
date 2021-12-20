@@ -1,0 +1,70 @@
+main {
+    overflow: auto;
+    background-image: url(img/pink-texture2.jpg);
+    background-repeat: round;
+    background-size: cover;
+}
+
+.title-family h1 {
+    margin: 0px;
+
+}
+
+.title-family p {
+    padding: 5px 20px;
+    font-size: 20px;
+    /*font-weight: bold;*/
+}
+
+.photos-family-grid {
+    display: grid;
+    grid-template-columns: 1.24fr 1.5fr 1fr;
+    margin: 20px 60px;
+}
+
+.photo-family {
+    display: grid;
+    margin: 0 auto;
+
+}
+
+.photo-family img {
+    grid-column: 1;
+    grid-row: 1;
+    max-width: 100%;
+    display: block;
+}
+
+.text-family {
+    align-self: end;
+    grid-column: 1;
+    grid-row: 1;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.308);
+    padding: 0 10px;
+    font-size: 18px;
+    line-height: 1.7;
+    text-align: center;
+}
+
+.text-family p {
+    margin: 0;
+}
+
+@media screen and (max-width: 1055px) {
+    .photos-family-grid {
+        grid-template-columns: 1.24fr 1fr;
+        grid-row-gap: 20px;
+    }   
+}
+
+@media screen and (max-width: 815px) {
+    .photos-family-grid {
+        grid-template-columns: 1fr;
+        grid-row-gap: 20px;
+    } 
+    .title-family {
+        grid-row: 1;
+    }  
+}
+
