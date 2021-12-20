@@ -139,6 +139,7 @@ function prev() {
 
 function onClickCover(event) {
     event.style.left = "-100vw";
+    event.parentNode.style.overflow = 'auto';
 }
 
 

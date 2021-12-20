@@ -7,7 +7,7 @@
 
 .photo-slider {
     width: 65vw;
-    height: 65vh;
+    height: auto;
 }
 
 .slider-hobbies.hidden-hobbies {
@@ -15,6 +15,7 @@
     width: 0;
     opacity: 0;
     overflow: hidden;
+    border: none;
 }
 
 .slider-hobbies {

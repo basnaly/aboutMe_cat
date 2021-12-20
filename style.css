@@ -50,19 +50,13 @@ main {
     background-image: url(img/pink-texture2.jpg);
     background-repeat: round;
     position: relative;
+    background-size: cover;
 }
 
 .content {
     position: relative;
     flex: 1;
     overflow: auto;
-}
-
-.content-title {
-    margin: 20px;
-    font-size: 24px;
-    font-weight: bold;
-    padding: 0 50px;
 }
 
 h1 {
